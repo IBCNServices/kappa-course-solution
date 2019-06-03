@@ -1,8 +1,15 @@
-# UGAIN BDHO
+# Kappa architecture hands-on
 
 ## Getting started
 
 Run kafka.
+
+Clone the repository
+
+```bash
+git clone https://github.com/IBCNServices/kappa-course.git
+cd kappa-course
+```
 
 ```bash
 docker start kafka || docker run -p 2181:2181 -p 9092:9092 --env ADVERTISED_HOST=0.0.0.0 --env ADVERTISED_PORT=9092 --name kafka spotify/kafka
@@ -11,7 +18,14 @@ docker start kafka || docker run -p 2181:2181 -p 9092:9092 --env ADVERTISED_HOST
 Run notebook and mount current directory as `work` inside of the container.
 
 ```bash
-docker start notebook || docker run -it --rm --net="host" -v "$PWD":/home/jovyan/work jupyter/pyspark-notebook --name notebook
+docker start notebook || docker run -it --rm --net="host" -v "$PWD":/home/jovyan/work --name notebook jupyter/pyspark-notebook
+```
+
+## Reset environment
+
+```bash
+docker stop kafka; docker rm kafka
+docker stop notebook; docker rm notebook
 ```
 
 ## Authors
