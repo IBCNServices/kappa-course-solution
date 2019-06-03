@@ -18,7 +18,13 @@ docker start kafka || docker run -p 2181:2181 -p 9092:9092 --env ADVERTISED_HOST
 Run notebook and mount current directory as `work` inside of the container.
 
 ```bash
-docker start notebook || docker run -it --rm --net="host" -v "$PWD":/home/jovyan/work --name notebook jupyter/pyspark-notebook
+docker start notebook || docker run -it --net="host" -v "$PWD":/home/jovyan/work --name notebook jupyter/pyspark-notebook
+```
+
+Run influxDB.
+
+```bash
+docker start influxdb || docker run -it -p 8086:8086 --name influxdb influxdb
 ```
 
 ## Reset environment
