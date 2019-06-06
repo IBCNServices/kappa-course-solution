@@ -23,13 +23,13 @@
 3. Start the Kafka broker.
 
     ```bash
-    docker start kafka || docker run -p 2181:2181 -p 9092:9092 --env ADVERTISED_HOST=0.0.0.0 --env ADVERTISED_PORT=9092 --name kafka spotify/kafka
+    docker start kafka || docker run -d -p 2181:2181 -p 9092:9092 --env ADVERTISED_HOST=0.0.0.0 --env ADVERTISED_PORT=9092 --name kafka spotify/kafka
     ```
 
 4. Start InfluxDB
 
     ```bash
-    docker start influxdb || docker run -p 8086:8086 --name influxdb influxdb
+    docker start influxdb || docker run -d -p 8086:8086 --name influxdb influxdb
     ```
 
 5. Start Jupyter Notebook and mount the current directory as the "work" folder inside of the container.
