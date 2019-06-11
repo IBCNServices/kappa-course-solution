@@ -18,6 +18,8 @@
     ```bash
     cd ~/Desktop/kappa-course
     git pull origin master
+    # Ensure the docker container can access the files.
+    chmod -R o+rwx ~/Desktop/kappa-course
     ```
 
 3. Start the Kafka broker.
@@ -50,8 +52,8 @@
     [I 09:03:49.278 NotebookApp] The Jupyter Notebook is running at:
     [I 09:03:49.278 NotebookApp] http://(howard or 127.0.0.1):8888/?token=TOKEN
     [I 09:03:49.278 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-    [C 09:03:49.282 NotebookApp] 
-        
+    [C 09:03:49.282 NotebookApp]
+
         To access the notebook, open this file in a browser:
             file:///home/jovyan/.local/share/jupyter/runtime/nbserver-7-open.html
         Or copy and paste one of these URLs:
