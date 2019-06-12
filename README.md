@@ -62,7 +62,7 @@
 
     Open the http url of the command in your browser, using the `127.0.0.1` hostname. Don't forget to remove the brackets and the other hostname from the url.
 
-6. In the Jupyter web ui, open the `kappa-introduction` notebook in the `work` folder and follow the instructions there.
+6. In the Jupyter web ui, open the `introduction` notebook in the `work` folder and follow the instructions there.
 
 ## Appendix
 
