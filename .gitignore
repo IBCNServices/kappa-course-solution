@@ -1,6 +1,9 @@
 # extracted source files of clicks
 20180113-6-9-with-nulls.json
 
+# kafka state
+checkpoints-*/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -125,4 +128,3 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-
