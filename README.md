@@ -20,7 +20,7 @@
 
    1. The container will be automatically created based on the configuration included in the lab files.
 1. Wait until the container is set up. This can take a few minutes because the container needs to be pulled and built. You can check the progress by clicking "Starting Dev Container (show log)" in the notification on the bottom right of VSCode.
-1. When the containers are setup, open `introduction.ipynb` and follow the instructions there.
+1. When the containers are setup, open `introduction.ipynb` and follow the instructions there. When asked about which kernel to use, always choose the Python kernel `base (Python 3.9.7) /opt/conda/bin/python`.
 
 ## Appendix
 
