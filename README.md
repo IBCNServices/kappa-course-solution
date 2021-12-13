@@ -26,7 +26,21 @@
 
 ### Reset environment and remove databases
 
-TODO
+If you encounter uncommon issues with Spark or connectivity issues to Kafka, it might help to remove all containers from your system, restart vscode and choose "open folder in container" again.
+
+For users on Linux and macOS, run the following command in order to remove ALL containers from your system.
+
+```shell
+docker stop $(docker ps -aq) && docker rm $(docker ps -aq)
+```
+
+Windows users can do this from the Docker GUI or run the following commands in PowerShell:
+
+
+```powershell
+docker stop $(docker ps -aq)
+docker rm $(docker ps -aq)
+```
 
 ## Copyright
 
